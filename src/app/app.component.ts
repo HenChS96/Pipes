@@ -24,5 +24,14 @@ export class AppComponent {
       calle: "First",
       casa: "19"
     }
-  } 
+  }
+  
+  valueOfPromise = new Promise( (resolve, reject) =>{
+
+    setTimeout( ()=>resolve('Llego la data!'), 3500);
+
+  } );
+
+  date = new Date();
+
 }
