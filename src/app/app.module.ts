@@ -3,9 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-@NgModule({
+import { CapitalizedPipe } from './pipes/capitalized.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
+
+
+@NgModule({ 
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizedPipe,
+    PasswordPipe
   ],
   imports: [
     BrowserModule

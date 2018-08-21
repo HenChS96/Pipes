@@ -91,6 +91,24 @@
           <td> date:medium </td>
           <td> {{ date | date:'medium' }} </td>
       </tr>
+      <tr>
+          <td> {{ name2 }} </td>
+          <td> Capitalized </td>
+          <td> {{ name2 | capitalized }} </td>
+      </tr>
+      <tr>
+          <td> {{ name2 }} </td>
+          <td> Capitalized:false </td>
+          <td> {{ name2 | capitalized:false }} </td>
+      </tr>
+      <tr>
+          <td> {{ name }} </td>
+          <td> Password: {{ activate }} 
+            <br>
+              <button (click)="activate = !activate" type="button" class="btn btn-outline-primary">actite/deactite</button>
+          </td>
+          <td> {{ name | password:activate }} </td>
+      </tr>
     </tbody>
   </table>
 
